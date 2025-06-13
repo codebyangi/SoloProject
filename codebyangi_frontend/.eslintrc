@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "comma-dangle": ["error", "never"],
+    "react/prop-types": "off"
+  }
+}
