@@ -6,7 +6,7 @@ This application exposes endpoints for basic CRUD operations to create, read, up
 
 ## Startup
 
-Make sure you are in the project directory: [codeByAngi_backend)](https://github.com/codebyangi/SoloProject.git/codeByAngi_backend).
+Make sure you are in the project directory: [CodeByAngi Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend).
 
 Open the HealthApplication file ( look under : src\main\java\demo ) and use the green play button in the left gutter to start the application.
 

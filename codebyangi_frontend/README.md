@@ -29,9 +29,9 @@ React (v17.x or later) \
 ESLint
 
 ## Usage
-1. Make sure you have the [Health API](https://github.com/codebyangi/SoloProject.git/codeByAngi_backend) running.
+1. Make sure you have the [Health API](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend) running.
 
-2. Make sure you are in the project directory: [codeByAngi_frontend)](https://github.com/codebyangi/SoloProject.git/codeByAngi_frontend).
+2. Make sure you are in the project directory: [CodeByAngi Frontend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_frontend).
 
 3. Open a new terminal tab/window at the root of the project directory
 
@@ -53,7 +53,7 @@ This command must be used in the terminal window running the ui server.
 React: A JavaScript library for building user interfaces. [React Documentation](https://reactjs.org/docs/getting-started.html) \
 Axios: Promise based HTTP client for the browser and node.js. [Axios Documentation](https://axios-http.com/docs/intro) \
 React Router: Declarative routing for React. [React Router Documentation](https://reactrouter.com/en/main/start/overview) 
-Backend API: [Health API](https://github.com/codebyangi/SoloProject.git/codeByAngi_backend)
+Backend API: [Health API](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend)
 
 ## Running ESLint
 This project uses ESLint with Airbnb's configuration for JavaScript linting. 
