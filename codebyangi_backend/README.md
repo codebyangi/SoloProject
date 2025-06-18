@@ -8,7 +8,11 @@ This application exposes endpoints for basic CRUD operations to create, read, up
 
 Make sure you are in the project directory: [CodeByAngi Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend).
 
-Open the HealthApplication file ( look under : src\main\java\demo ) and use the green play button in the left gutter to start the application.
+Open the HealthApplication file using IntelliJ ( look under : src\main\java\demo ) and use the green play button in the left gutter to start the application.
+
+This was build using JDK 22 as SDK. You can check this by going to File > Project Structure > Project and make sure an SDK is selected. If not, you have to add one and install it. 
+
+If the green play button is not active, right-click on pom.xml file and select Add as Maven Project.  
 
 The server will start on `localhost:8085`
 
