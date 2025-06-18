@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Routes, Navigate
+} from 'react-router-dom';
 import Header from './Patient/Component/Header';
 import PatientPage from './Patient/PatientPage';
 import PatientDetailsPage from './Patient/PatientDetailsPage';
@@ -18,6 +20,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path='/' element={<Navigate to='/patients' replace />} />
           <Route path='/patients' element={<PatientPage />} />
           <Route path='/patients/:id' element={<PatientDetailsPage />} />
         </Routes>
