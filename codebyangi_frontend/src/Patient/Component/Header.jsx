@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/logo.jpg';
 import icon from '../../assets/icon.jpg';
@@ -12,7 +13,7 @@ export default function Header() {
       </div>
 
       <div className='links-container'>
-        <a href='/patients' className='link'>Patients</a>
+        <Link to='/patients' className='link'>Patients</Link>
         <img src={icon} alt='Icon' className='icon' />
       </div>
     </header>
