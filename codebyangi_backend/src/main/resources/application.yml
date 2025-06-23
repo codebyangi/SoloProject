@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: ${PORT:8080}
   error:
     include-message: always
 
@@ -7,11 +7,10 @@ spring:
   jpa:
     database: POSTGRESQL
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: root
-    driverClassName: org.postgresql.Driver
+    url: ${DATABASE_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
