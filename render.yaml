@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: java-backend
+    runtime: docker
+    dockerfilePath: codebyangi_backend/Dockerfile
+    plan: free
