@@ -35,19 +35,9 @@ ESLint
 
 3. Open a new terminal tab/window at the root of the project directory
 
-4. Install dependencies 
-### `npm install`
-
-5. Run the application in the project directory
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console. 
-
-6. Stop the UI development server
-### `Ctrl + C` 
-This command must be used in the terminal window running the ui server.
+4. The frontend is deployed and available at:
+   https://soloproject-frontend.netlify.app/
+   No local install or start commands are needed to use the deployed app. 
 
 ## External Dependencies 
 React: A JavaScript library for building user interfaces. [React Documentation](https://reactjs.org/docs/getting-started.html) \

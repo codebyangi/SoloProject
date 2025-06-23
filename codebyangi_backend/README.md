@@ -10,11 +10,9 @@ Make sure you are in the project directory: [CodeByAngi Backend](https://github.
 
 Open the HealthApplication file using IntelliJ ( look under : src\main\java\demo ) and use the green play button in the left gutter to start the application.
 
-This was build using JDK 22 as SDK. You can check this by going to File > Project Structure > Project and make sure an SDK is selected. If not, you have to add one and install it. 
+This was build using JDK 17 as SDK. You can check this by going to File > Project Structure > Project and make sure an SDK is selected. If not, you have to add one and install it. 
 
 If the green play button is not active, right-click on pom.xml file and select Add as Maven Project.  
-
-The server will start on `localhost:8085`
 
 ## Pre-requisites
 
@@ -82,5 +80,5 @@ Running Mockito Unit Tests
 
 The FrontEndConfig class is a Spring configuration class designed to set up Cross-Origin Resource Sharing (CORS) for 
 the backend application. This configuration allows the backend to accept requests from the specified front-end origin 
-(React frontend URL: [http://localhost:3000](http://localhost:3000)), 
+(React frontend URL: [React App](https://soloproject-frontend.netlify.app), 
 enabling smooth communication between the two layers of the application.

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const patientsApiUrl = 'http://localhost:8085/patients';
+const patientsApiUrl = 'https://soloproject-ymc1.onrender.com/patients';
 
 /**
  * Fetches patient data from the backend.
