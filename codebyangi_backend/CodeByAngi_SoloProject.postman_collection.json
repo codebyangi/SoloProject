@@ -1,10 +1,11 @@
 {
 	"info": {
-		"_postman_id": "d894099e-4483-4828-af9e-ad19007640d9",
-		"name": "HealthAPI",
+		"_postman_id": "e4a69187-6716-493b-8800-1f2470e6af50",
+		"name": "CodeByAngi_SoloProject",
 		"description": "Demonstrates all of the 2XX and 4XX functional requirements for GET, POST, PUT, and DELETE methods for a Patient entity.",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "34673601"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34673601",
+		"_collection_link": "https://www.postman.com/orbital-module-physicist-32511042/workspace/projects/collection/34673601-e4a69187-6716-493b-8800-1f2470e6af50?action=share&source=collection_link&creator=34673601"
 	},
 	"item": [
 		{
@@ -15,7 +16,18 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8085/patients"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
 					},
 					"response": []
 				},
@@ -24,7 +36,19 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8085/patients/200"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/200",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"200"
+							]
+						}
 					},
 					"response": []
 				},
@@ -33,7 +57,19 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8085/patients/1"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/3",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"3"
+							]
+						}
 					},
 					"response": []
 				}
@@ -56,7 +92,18 @@
 								}
 							}
 						},
-						"url": "localhost:8085/patients"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
 					},
 					"response": []
 				},
@@ -67,14 +114,25 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"firstName\": \"Mihai\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1111\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Chicago\",\r\n\"state\": \"IL\",\r\n\"zip\": \"90049\",\r\n\"age\": 0,\r\n\"height\": 18,\r\n\"weight\": 299,\r\n\"gender\": \"Other\",\r\n\"insurance\": \"BCBS\"\r\n}",
+							"raw": "{\r\n\"firstName\": \"Mihai\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1115\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Chicago\",\r\n\"state\": \"IL\",\r\n\"zip\": \"90049\",\r\n\"age\": 0,\r\n\"height\": 18,\r\n\"weight\": 299,\r\n\"gender\": \"Other\",\r\n\"insurance\": \"BCBS\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:8085/patients"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
 					},
 					"response": []
 				},
@@ -92,7 +150,18 @@
 								}
 							}
 						},
-						"url": "localhost:8085/patients"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
 					},
 					"response": []
 				},
@@ -110,7 +179,18 @@
 								}
 							}
 						},
-						"url": "localhost:8085/patients"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
 					},
 					"response": []
 				}
@@ -133,7 +213,19 @@
 								}
 							}
 						},
-						"url": "localhost:8085/patients/1"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
 					},
 					"response": []
 				},
@@ -144,14 +236,26 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \"title\":\"Jaws ltt\",\r\n\"genre\": \"Sci-fi\",\r\n\"director\": \"Alfred Hitchcock\",\r\n\"dailyRentalCost\": 2.74\r\n\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:8085/patients/999"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/999",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"999"
+							]
+						}
 					},
 					"response": []
 				},
@@ -162,14 +266,26 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1111\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1115\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:8085/patients/1"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
 					},
 					"response": []
 				},
@@ -187,7 +303,19 @@
 								}
 							}
 						},
-						"url": "localhost:8085/patients/1"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/3",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"3"
+							]
+						}
 					},
 					"response": []
 				}
@@ -201,16 +329,19 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"123-45-6789\",\r\n\"email\": \"vsteph@comcast.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "localhost:8085/patients/55"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/55",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"55"
+							]
+						}
 					},
 					"response": []
 				},
@@ -221,14 +352,26 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \"title\":\"Jaws ltt\",\r\n\"genre\": \"Sci-fi\",\r\n\"director\": \"Alfred Hitchcock\",\r\n\"dailyRentalCost\": 2.74\r\n\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:8085/patients/1"
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
 					},
 					"response": []
 				}

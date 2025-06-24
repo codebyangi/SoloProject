@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
  * This is a Controller class, with a PatientService dependency.
  * Main job: to define the endpoints and deffer the logic to a service layer.
  * Uses annotation to signal the framework, exposes the endpoints for retrieving, creating, editing and deleting patients.
- * It opens a host 8085 and exposes endpoints at the address "/patients".
  */
 
 @RestController
@@ -57,7 +56,7 @@ public class PatientController {
   }
 
   /**
-   * Creates a new patient by sending a POST request (needs a JSON body with the right attributes) to host 8085/patients.
+   * Creates a new patient by sending a POST request (needs a JSON body with the right attributes).
    * @param patientToCreate patient object representing the new patient that we want to add to database.
    * @return The created patient.
    */
@@ -69,7 +68,7 @@ public class PatientController {
   }
 
   /**
-   * Edits an existing patient by sending a PUT request (needs a JSON body with the right attributes and an ID) to host 8085/patients/id.
+   * Edits an existing patient by sending a PUT request (needs a JSON body with the right attributes and an ID).
    * @param patientToEdit patient object representing the updated fields
    * @param id The ID of the patient to edit.
    * @return The updated patient.
@@ -82,7 +81,7 @@ public class PatientController {
   }
 
   /**
-   * Deletes a patient with the given ID by sending a DELETE request to host 8085/patients/id.
+   * Deletes a patient with the given ID by sending a DELETE request.
    * @param id The ID of the patient to delete.
    */
   @DeleteMapping(value = "/{id}")

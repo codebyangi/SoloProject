@@ -1,4 +1,5 @@
 # Solo Project Frontend - Health Application
+**GitHub Repository**: [CodeByAngi Frontend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_frontend)
 
 ## Project Background
 The application allows a user in a medical office to create, review, update and delete
@@ -22,28 +23,36 @@ For each patient, we have the following optional fields: \
      
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-## Pre-requisites
+## Live Deployment
+The frontend is deployed and available at: [SoloProject - Frontend](https://soloproject-frontend.netlify.app/)
+No local install or start commands are needed to use the deployed app. 
+The application requires a running backend API, which is deployed and accessible at: [SoloProject - Backend](https://soloproject-ymc1.onrender.com/patients)
+
+## Pre-requisites (for local development)
 Node.js (v14.x or later) \
 npm (v6.x or later) \
 React (v17.x or later) \
 ESLint
 
-## Usage
-1. Make sure you have the [Health API](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend) running.
+## Usage (for local development)
+1. Make sure you have the [CodeByAngi_Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend) running.
 
 2. Make sure you are in the project directory: [CodeByAngi Frontend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_frontend).
 
 3. Open a new terminal tab/window at the root of the project directory
 
-4. The frontend is deployed and available at:
-   https://soloproject-frontend.netlify.app/
-   No local install or start commands are needed to use the deployed app. 
+4. Install dependencies
+### `npm install`
+
+5. Run the application in the project directory
+### `npm start`
+Runs the app in the development mode.\
 
 ## External Dependencies 
 React: A JavaScript library for building user interfaces. [React Documentation](https://reactjs.org/docs/getting-started.html) \
 Axios: Promise based HTTP client for the browser and node.js. [Axios Documentation](https://axios-http.com/docs/intro) \
 React Router: Declarative routing for React. [React Router Documentation](https://reactrouter.com/en/main/start/overview) 
-Backend API: [Health API](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend)
+Backend API: [CodeByAngi_Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend)
 
 ## Running ESLint
 This project uses ESLint with Airbnb's configuration for JavaScript linting. 

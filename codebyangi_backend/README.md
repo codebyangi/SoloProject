@@ -1,10 +1,17 @@
 # Solo Project Backend - Health Application
+**GitHub Repository**: [CodeByAngi_Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend)
 
 The Health application is a Spring REST API application and it uses a three-layered architecture with presentation, service, and data layers.
 It's designed to manage patient data for a healthcare company.
 This application exposes endpoints for basic CRUD operations to create, read, update, and delete patients.
 
-## Startup
+## Live deployment 
+The backend is deployed and accessible at: [SoloProject - Backend](https://soloproject-ymc1.onrender.com/patients)
+The frontend is deployed and available at: [SoloProject - Frontend](https://soloproject-frontend.netlify.app/)
+The backend is deployed on Render, and is connected to a hosted PostgreSQL database.
+No local setup is required to use the deployed app.
+
+## Startup (for local development)
 
 Make sure you are in the project directory: [CodeByAngi Backend](https://github.com/codebyangi/SoloProject/tree/main/codebyangi_backend).
 
@@ -21,12 +28,6 @@ If the green play button is not active, right-click on pom.xml file and select A
 - Maven 3.6.0 or higher
 - Postman
 - PostgresSQL
-
-Make sure that your POSTGRES database is available and configured with the following options:
-
-- POSTGRES_username=postgres
-- POSTGRES_PASSWORD=root
-- PORT=5432
 
 ## Postman
 
