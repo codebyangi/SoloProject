@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "e4a69187-6716-493b-8800-1f2470e6af50",
+		"name": "CodeByAngi_SoloProject",
+		"description": "Demonstrates all of the 2XX and 4XX functional requirements for GET, POST, PUT, and DELETE methods for a Patient entity.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34673601",
+		"_collection_link": "https://www.postman.com/orbital-module-physicist-32511042/workspace/projects/collection/34673601-e4a69187-6716-493b-8800-1f2470e6af50?action=share&source=collection_link&creator=34673601"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get all patients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID-404 Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/200",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID-200 OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/3",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "POST Patient-201 Created",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"123-45-6789\",\r\n\"email\": \"vsteph@comcast.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Patient2-201 Created",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Mihai\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1115\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Chicago\",\r\n\"state\": \"IL\",\r\n\"zip\": \"90049\",\r\n\"age\": 0,\r\n\"height\": 18,\r\n\"weight\": 299,\r\n\"gender\": \"Other\",\r\n\"insurance\": \"BCBS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Patient  - 409 Conflict",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"123-45-6789\",\r\n\"email\": \"vsteph@comcast.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Patient-400 Bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens2\",\r\n\"ssn\": \"123-45-6780\",\r\n\"email\": \"vsteph@comcast.comp\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"\",\r\n\"state\": \"Ca\",\r\n\"zip\": \"9004\",\r\n\"age\": 668,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "Edit patient-200 OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victoras\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"123-44-6789\",\r\n\"email\": \"vsteph@comcast.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Henderson\",\r\n\"state\": \"NV\",\r\n\"zip\": \"90714\",\r\n\"age\": 1,\r\n\"height\": 108,\r\n\"weight\": 500,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit patient-404 Not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/999",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit patient-409 Conflict",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephens\",\r\n\"ssn\": \"111-11-1115\",\r\n\"email\": \"mishu@yahoo.com\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"90049\",\r\n\"age\": 66,\r\n\"height\": 79,\r\n\"weight\": 299,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit patient-400 Bad request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Victor\",\r\n\"lastName\": \"Stephen@s\",\r\n\"ssn\": \"123-45-6841\",\r\n\"email\": \"vsteph@comcast.coee\",\r\n\"street\": \"8430 W Sunset Blvd\",\r\n\"city\": \"Los Angeles\",\r\n\"state\": \"CA\",\r\n\"zip\": \"9004\",\r\n\"age\": 66,\r\n\"height\": 0,\r\n\"weight\": 1500,\r\n\"gender\": \"Male\",\r\n\"insurance\": \"Self-Insured@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/3",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Delete patient-404 Not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/55",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete patient-204 No Content",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://soloproject-ymc1.onrender.com/patients/4",
+							"protocol": "https",
+							"host": [
+								"soloproject-ymc1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"patients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
